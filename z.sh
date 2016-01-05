@@ -198,7 +198,7 @@ _z() {
             }
         ')"
         [ $? -gt 0 ] && return
-        [ "$cd" ] && cd "$cd"
+        [ "$cd" ] && cd "$cd" && pwd
     fi
 }
 
